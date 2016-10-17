@@ -1,0 +1,10 @@
+{% extends 'base.twig' %} 
+
+{% block content %}
+<div id="InnerContent" class="software">
+    <img class="screenshot" src="{% block main_image %}{% endblock main_image %}"/>
+    <h1 class="title">{{ title }}</h1>
+    <div class="justify description">{% block description %}{% endblock %}</div>
+    <div class="links">{% block links %}{% endblock %}</div>     
+</div>
+{% endblock content %} 

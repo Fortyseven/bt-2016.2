@@ -1,0 +1,27 @@
+{% set title = "ToneDef" %}
+
+{% extends '../../../layout/software.twig' %} 
+
+{% block main_image %}/assets/images/software/mobile/tonedef/tonedef.jpg{% endblock main_image %}
+
+{% block description %}
+<p>ToneDef is a small, powerful open-source tone dialer featuring full 
+    <a href="https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling">DTMF</a>, 
+    <a href="https://en.wikipedia.org/wiki/Blue_box">blue box</a>, and 
+    <a href="https://en.wikipedia.org/wiki/Red_box_(phreaking)">red box</a> modes.</p> 
+
+<p>Dial using the keypad buttons, enter a predefined sequence for automatic playback, or select an entry from your contact list. Newer releases include an ever-growing bank of international tones.</p>
+
+<p>A small slice of phreaking history!</p>
+
+{% endblock description %}
+{% block links %}
+<ul>
+    <li><a href="http://www.projectmf.org/">Try using ToneDef with ProjectMF!</a></li>
+</ul>
+<div class="play-it-block">    
+    <a class="badge_googleplay" title="Get it on the Google Play Store!"href="https://play.google.com/store/apps/details?id=com.bytestemplar.tonedef"><div></div></a>
+    <a class="badge_fdroid" title="Get it on F-Droid!"href="https://f-droid.org/repository/browse/?fdfilter=tonedef&fdid=com.bytestemplar.tonedef"><div></div></a>
+    <a class="badge_github" title="Fork it on GitHub!"href="https://github.com/Fortyseven/ToneDef"><div></div></a>
+</div>
+{% endblock links %}

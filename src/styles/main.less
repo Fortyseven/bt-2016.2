@@ -1,0 +1,114 @@
+@import "reset.less";
+@import "globals.less";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800');
+@font-face {
+    font-family: 'Synchro';
+    src:         url('fonts/SynchroStd.eot'); /* IE9 Compat Modes */
+    src:         url('fonts/SynchroStd.eot?#iefix') format('embedded-opentype'),
+                 url('fonts/SynchroStd.woff') format('woff'),
+                 url('fonts/SynchroStd.ttf') format('truetype');
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    background:  @bt-grey;
+    padding:     0;
+    margin:      0;
+    font-size:   12pt;
+    letter-spacing: -0.03em;
+}
+h1, h2 {
+    font-size:   2em;
+    font-weight: bold;
+    color:       @bt-red;
+}
+h2 {
+    font-size: 1.5em;
+}
+#Content {
+    max-width:    800px;
+    margin-left:  auto;
+    margin-right: auto;
+    padding:      130px 0.5em 0.5em;
+    font-size:    1.2em;
+    box-shadow:   0 0 5em black;
+    background:   white;
+    z-index:      0;
+}
+
+#InnerContent {
+    padding: 1em;
+}
+
+a {
+    color:       @bt-red;
+    // text-shadow: 0 0 1px #888;
+}
+a:hover {
+    color:           @bt-ltred;
+    text-decoration: none;
+    transition:      color 0.15s;
+}
+/***Utils****************************************************/
+.clear {
+    clear: both;
+}
+.justify {
+    text-align: justify;
+}
+/***Footer***************************************************/
+footer {
+    text-align:     center;
+    color:          grey;
+    font-size:      x-small;
+    font-family:    "Open Sans", sans-serif;
+    text-shadow:    0 0 3px black;
+    line-height:    initial;
+    margin-bottom:  1em;
+}
+/**********************/
+#FrontPage {
+    img {
+        width: 100%;
+    }
+}
+
+@import "software.less";
+@import "about.less";
+
+.play-it-block {
+    text-align: center;
+    .badge_itchio, 
+    .badge_gamejolt,
+    .badge_fdroid,
+    .badge_googleplay,
+    .badge_chrome,
+    .badge_github  {
+        div {
+            display: inline-block;
+            background-repeat: none;
+            background-size: 115px 46px;
+            width: 115px;
+            height: 46px;
+        }
+    }
+
+    .badge_itchio div {
+        background-image: url('/assets/images/badge_itchio.png');
+    }
+    .badge_gamejolt div {
+        background-image: url('/assets/images/badge_gamejolt.png');
+    }
+    .badge_googleplay div {
+        background-image: url('/assets/images/badge_googleplay.png');
+    }
+    .badge_fdroid div {
+        background-image: url('/assets/images/badge_fdroid.png');
+    }
+    .badge_github div {
+        background-image: url('/assets/images/badge_github.png');
+    }
+    .badge_chrome div {
+        background-image: url('/assets/images/badge_chromestore.png');
+    }
+}
+

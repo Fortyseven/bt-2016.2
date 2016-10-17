@@ -1,0 +1,398 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800');
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+dl,
+dt,
+dd,
+ol,
+fieldset,
+form,
+label,
+legend,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+* {
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.4em;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.Card {
+  background: #f8f8f8;
+  padding: 0.5em;
+  margin: 1em;
+  box-shadow: 2px 2px 8px #888888;
+  clear: both;
+}
+.Card-Hover {
+  box-shadow: 1px 1px 2px #bababa;
+  transition: all 0.15s;
+  background-color: white;
+}
+.Button {
+  background: #880000;
+  border-radius: 2em;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  text-align: center;
+  color: white;
+  font-size: 12pt;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.Button a {
+  min-width: 8em;
+  border-radius: 2em;
+  padding: 0.50em;
+  margin: 0;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+}
+.Button a:hover,
+.Button button:hover {
+  background: #440000;
+  transition: background 0.125s;
+}
+.Button button {
+  display: inline-block;
+  border: none;
+  background: #880000;
+  border-radius: 2em;
+  font-weight: bold;
+  min-width: 8em;
+  padding: 0.50em;
+  margin: 0;
+  color: white;
+}
+@font-face {
+  font-family: 'Synchro';
+  src: url('fonts/SynchroStd.eot');
+  /* IE9 Compat Modes */
+  src: url('fonts/SynchroStd.eot?#iefix') format('embedded-opentype'), url('fonts/SynchroStd.woff') format('woff'), url('fonts/SynchroStd.ttf') format('truetype');
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #444444;
+  padding: 0;
+  margin: 0;
+  font-size: 12pt;
+  letter-spacing: -0.03em;
+}
+h1,
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #880000;
+}
+h2 {
+  font-size: 1.5em;
+}
+#Content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 130px 0.5em 0.5em;
+  font-size: 1.2em;
+  box-shadow: 0 0 5em black;
+  background: white;
+  z-index: 0;
+}
+#InnerContent {
+  padding: 1em;
+}
+a {
+  color: #880000;
+}
+a:hover {
+  color: #cc4444;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+/***Utils****************************************************/
+.clear {
+  clear: both;
+}
+.justify {
+  text-align: justify;
+}
+/***Footer***************************************************/
+footer {
+  text-align: center;
+  color: grey;
+  font-size: x-small;
+  font-family: "Open Sans", sans-serif;
+  text-shadow: 0 0 3px black;
+  line-height: initial;
+  margin-bottom: 1em;
+}
+/**********************/
+#FrontPage img {
+  width: 100%;
+}
+/***********************************************/
+.software {
+  background: #f8f8f8;
+  padding: 0.5em;
+  margin: 1em;
+  box-shadow: 2px 2px 8px #888888;
+  clear: both;
+  /* Text body */
+  /* Links */
+}
+.software .title {
+  font-size: 2rem;
+  padding-top: 1rem;
+  color: #880000;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+.software .screenshot {
+  width: 100%;
+  text-align: center;
+}
+.software .screenshot img {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.software .description {
+  letter-spacing: -0.04em;
+  font-weight: 400;
+}
+.software .links ul:before {
+  content: "Links";
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #880000;
+  display: block;
+  padding-bottom: 0.5em;
+}
+.software .links ul {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  list-style: none;
+  padding-left: 0;
+  padding-top: 0;
+}
+.software .links ul li:before {
+  content: "☛ ";
+  color: black;
+}
+.software .links ul li {
+  padding-bottom: 0.25em;
+}
+.software .links ul a {
+  font-weight: bold;
+}
+/***********************************************/
+/* Header on each section */
+h1.software-section-name {
+  font-size: 2em;
+  font-family: "Synchro", "Open Sans";
+  display: inline-block;
+  position: relative;
+  left: -1em;
+  letter-spacing: -0.05em;
+  line-height: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 0.08em;
+  text-transform: uppercase;
+  background: black;
+  color: white;
+  box-shadow: 1px 1px 4px black;
+  text-shadow: 0 0 8px red;
+  transform: rotate(12deg);
+  font-weight: normal;
+}
+/***********************************************/
+.software-section-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.software-section-entry {
+  background: #f8f8f8;
+  padding: 0.5em;
+  margin: 1em;
+  box-shadow: 2px 2px 8px #888888;
+  clear: both;
+  cursor: pointer;
+  padding: 0px;
+  position: relative;
+  flex: 1 0  auto;
+  width: 44%;
+}
+.software-section-entry .bg {
+  height: 145px;
+  top: 0;
+  left: 0;
+  display: block;
+  background: white;
+  background-size: cover;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  opacity: 0.20;
+  overflow: hidden;
+  z-index: -1;
+}
+.software-section-entry .fg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 0.5em;
+}
+.software-section-entry:hover {
+  box-shadow: 1px 1px 2px #bababa;
+  transition: all 0.15s;
+  background-color: white;
+}
+.software-section-entry .title {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+  letter-spacing: -0.05em;
+}
+.software-section-entry .title a {
+  text-decoration: underline;
+}
+.software-section-entry .subtitle {
+  letter-spacing: -0.05em;
+  font-weight: 400;
+}
+/* About */
+.about-page p {
+  font-weight: 400;
+  text-align: justify;
+}
+.about-page img {
+  padding: 1.2em;
+  float: right;
+}
+.play-it-block {
+  text-align: center;
+}
+.play-it-block .badge_itchio div,
+.play-it-block .badge_gamejolt div,
+.play-it-block .badge_fdroid div,
+.play-it-block .badge_googleplay div,
+.play-it-block .badge_chrome div,
+.play-it-block .badge_github div {
+  display: inline-block;
+  background-repeat: none;
+  background-size: 115px 46px;
+  width: 115px;
+  height: 46px;
+}
+.play-it-block .badge_itchio div {
+  background-image: url('/assets/images/badge_itchio.png');
+}
+.play-it-block .badge_gamejolt div {
+  background-image: url('/assets/images/badge_gamejolt.png');
+}
+.play-it-block .badge_googleplay div {
+  background-image: url('/assets/images/badge_googleplay.png');
+}
+.play-it-block .badge_fdroid div {
+  background-image: url('/assets/images/badge_fdroid.png');
+}
+.play-it-block .badge_github div {
+  background-image: url('/assets/images/badge_github.png');
+}
+.play-it-block .badge_chrome div {
+  background-image: url('/assets/images/badge_chromestore.png');
+}

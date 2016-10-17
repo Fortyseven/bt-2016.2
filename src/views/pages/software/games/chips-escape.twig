@@ -1,0 +1,30 @@
+{% set title = "Ch1p5 Escape" %}
+
+{% extends '../../../layout/software.twig' %} 
+
+{% block main_image %}/assets/images/software/games/chips/chips.jpg{% endblock main_image %}
+
+{% block description %}
+    <p>My first real game in Unity 3D! A clone of the classic puzzle game, <a href="https://en.wikipedia.org/wiki/Chip%27s_Challenge">Chip's Challenge</a>.</p>
+
+    <p>It's rough as hell, and only contains the first level. There's a bunch of problems, all well-known, but I'm not 
+        taking the time to fix them. :P</p>
+
+    <h3>Known Issues</h3>
+    <ul>
+        <li>There's just one level!</li>
+        <li>There's a bug where the player can accidentally climb up on the wall under some circumstances.</li>
+        <li>The audio volume on some sound events is very low.</li>
+        <li>Occasionally on the Win32 build, keycards spin like mad. Almost certain I know why, too.</li>
+        <li>The WebGL build works fine in Firefox, but in Chrome lighting is almost entirely dark.</li>
+        <li>Etc, etc, etc.</li>
+    </ul>
+
+{% endblock description %}
+{% block links %}
+<ul>
+    <li><a href="http://bytestemplar.com/misc/unity/chips/">Play it! - WebGL (Broken on Chrome)</a></li>
+    <li><a href="http://bytestemplar.com/misc/unity/chips/ch1p5_1.zip">Play it! - Win32</a></li>
+
+</ul>
+{% endblock links %}

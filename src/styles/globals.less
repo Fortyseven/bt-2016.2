@@ -1,0 +1,69 @@
+//@font-face {
+//        font-family: 'intellectregular';
+//        src: url('../fonts/');
+//        src: url('intv-webfont.eot?#iefix') format('embedded-opentype'),
+//                     url('intv-webfont.woff2') format('woff2'),
+//                     url('intv-webfont.woff') format('woff'),
+//                     url('intv-webfont.ttf') format('truetype'),
+//                     url('intv-webfont.svg#intellectregular') format('svg');
+//        font-weight: normal;
+//        font-style: normal;
+//}
+@bt-white: white;
+@bt-red: #880000;
+@bt-ltred: @bt-red + #444;
+@bt-dkred: @bt-red - #444;
+@bt-grey: #444444;
+@bt-menu-selected: gold;
+@card-background: #f8f8f8;
+.Card {
+    background: @card-background;
+    padding:    0.5em;
+    margin:     1em;
+    box-shadow: 2px 2px 8px #888888;
+    clear:      both;
+}
+
+.Card-Hover {
+    box-shadow:       1px 1px 2px #888888 + 50%;
+    transition:       all 0.15s;
+    background-color: white;
+}
+
+.Button {
+    background:     @bt-red;
+    border-radius:  2em;
+    margin-left:    0.1em;
+    margin-right:   0.1em;
+    text-align:     center;
+    color:          @bt-white;
+    font-size:      12pt;
+    font-weight:    bold;
+    text-transform: capitalize;
+    div {
+    }
+    a {
+        min-width:     8em;
+        border-radius: 2em;
+        padding:       0.50em;
+        margin:        0;
+        font-weight:   bold;
+        color:         white;
+        display:       inline-block;
+    }
+    a:hover, button:hover {
+        background: @bt-dkred;
+        transition: background 0.125s;
+    }
+    button {
+        display:       inline-block;
+        border:        none;
+        background:    @bt-red;
+        border-radius: 2em;
+        font-weight:   bold;
+        min-width:     8em;
+        padding:       0.50em;
+        margin:        0;
+        color:         white;
+    }
+}

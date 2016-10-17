@@ -1,0 +1,143 @@
+@import "globals";
+
+/***********************************************/
+.software {
+    .Card;
+    .title {
+        font-size:      2rem;
+        padding-top:    1rem;
+        color:          @bt-red;
+        text-align:     center;
+        font-weight:    700;
+        letter-spacing: -0.05em;
+    }
+    .screenshot {
+        width:      100%;
+        text-align: center;
+        img {
+            width:        90%;
+            height:       auto;
+            margin-left:  auto;
+            margin-right: auto;
+        }
+    }
+    /* Text body */
+    .description {
+        letter-spacing: -0.04em;
+        font-weight:    400;
+    }
+    /* Links */
+    .links {
+        ul:before {
+                content:     "Links";
+                font-size:   1.5em;
+                font-weight: bold;
+                color:       @bt-red;
+                display:     block;
+                padding-bottom: 0.5em;
+        }
+        ul {            
+            font-family:    "Open Sans", sans-serif;
+            font-weight:    bold;
+            letter-spacing: -0.05em;
+            list-style:     none;
+            padding-left:   0;
+            padding-top: 0;
+
+            li:before {
+                content: "☛ ";
+                color:   black;
+            }
+            li {
+                padding-bottom: 0.25em;
+            }
+            a {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/***********************************************/
+/* Header on each section */
+h1.software-section-name {
+    font-size:      2em;
+    font-family:    "Synchro", "Open Sans";
+    display:        inline-block;
+    position:       relative;
+    left:           -1em;
+    letter-spacing: -0.05em;
+    line-height:    1em;
+    padding-left:   1em;
+    padding-right:  1em;
+    padding-bottom: 0.08em;
+    text-transform: uppercase;
+    background:     black;
+    color:          white;
+    box-shadow:     1px 1px 4px black;
+    text-shadow:    0 0 8px red;
+    transform:      rotate(12deg);
+    font-weight:    normal;
+}
+
+/***********************************************/
+.software-section-container {
+    display: flex;
+    flex-wrap: wrap;    
+}
+.software-section-entry {
+    .Card;
+    cursor:     pointer;
+    padding:    0px;
+    position:   relative;
+    flex:       1 0  auto;
+    width:      44%;
+    .bg {
+        height:          145px;
+        top:             0;
+        left:            0;
+        display:         block;
+        background:      white;
+        background-size: cover;
+        -webkit-filter:  blur(3px);
+        filter:          blur(3px);
+        opacity:         0.20;
+        overflow:        hidden;
+        z-index:         -1;
+    }
+    .fg {
+        position: absolute;
+        top:      0;
+        left:     0;
+        z-index:  10;
+        padding:  0.5em;
+    }
+    &:hover {
+        .Card-Hover;
+    }
+    .title {
+        font-size:      1.25em;
+        font-weight:    bold;
+        padding-bottom: 0.5em;
+        letter-spacing: -0.05em;
+        a {
+            text-decoration: underline;
+        }
+    }
+    .subtitle {
+        letter-spacing: -0.05em;
+        font-weight:    400;
+    }
+    //  .screenshot {
+    //    position: relative;
+    //    top: 0;
+    //    left: 0;
+    ////    float:        right;
+    //    padding-left: 0.5em;
+    //
+    //    img {
+    //      width:  200px;
+    //      height: auto;
+    //    }
+    //}
+}

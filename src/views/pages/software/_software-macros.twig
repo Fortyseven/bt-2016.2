@@ -1,0 +1,9 @@
+{% macro software_entry(title, subtitle, page, bg_img) %}
+<div class="software-section-entry" onclick="window.location='{{ page }}'">
+    <div class="bg" style="background-image:url('{{ bg_img }}');"></div>
+    <div class="fg">
+        <div class="title"><a href="{{ page }}">{{ title }}</a></div>
+        <div class="subtitle">{{ subtitle }}</div>
+    </div>
+</div>
+{% endmacro %}

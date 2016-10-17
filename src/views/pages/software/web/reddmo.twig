@@ -1,0 +1,21 @@
+{% set title = "Reddmo" %}
+
+{% extends '../../../layout/software.twig' %} 
+
+{% block main_image %}/assets/images/software/web/reddmo/reddmo.png{% endblock main_image %}
+
+{% block description %}
+<p>Reddmo is an HTML5 toy that automatically generates a random magazine cover using the images and headlines linked to off of Reddit. The cover 
+   can be customized to use content from a specific subreddit, or from the front page.</p>
+   
+<p>Admittedly, the outcome is hit or miss, but this was a seriously fun toy to hack on.</p>
+{% endblock description %}
+
+{% block links %}
+<ul>
+    <li><a href="http://bytestemplar.com/misc/reddmo/">Read it!</a></li>
+</ul>
+<div class="play-it-block">    
+    <a class="badge_github" title="Fork it on GitHub!"href="https://github.com/Fortyseven/Reddmo"><div></div></a>
+</div>
+{% endblock links %}

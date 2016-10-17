@@ -1,0 +1,28 @@
+{% set title = "LaserSmash!" %}
+
+{% extends '../../../layout/software.twig' %} 
+
+{% block main_image %}/assets/images/software/games/lasersmash/astro2.jpg{% endblock main_image %}
+
+{% block description %}
+<p><i>"A time long ago, a lone laser defense platform was our people's last line of defense against a raging 
+    meteor storm. And now, the storm has come again -- and this time, our enemies are taking advantage of it. 
+    Defend us, once more!"</i></p>
+
+<p>As a life-long fan of Mattel's amazing "Astrosmash" arcade shooter for the Intellivision, creating a remake 
+    of it has been something I've always started, but never finished. I have half-finished versions in C++, Flash, 
+    and more. When I finally settled on Unity for game development, I wanted to get this out of my system once 
+    and for all. And I wanted to create it from scratch, but try to stay somewhat faithful to the spirit of 
+    the original game.</p>
+        
+{% endblock description %}
+{% block links %}
+<ul>    
+    <li><a href="http://btsmash.tumblr.com/">Development Blog</a></li>
+    <li><a href="https://github.com/Fortyseven/LaserSmash">Source Code</a></li>     
+</ul>
+<div class="play-it-block">
+    <a class="badge_itchio" title="Play it on itch.io!" href="https://fortyseven.itch.io/lasersmash"><div></div></a>
+    <a class="badge_gamejolt" title="Play it on Game Jolt!"href="http://gamejolt.com/games/arcade/lasersmash/34900/"><div></div></a>
+</div>
+{% endblock links %}

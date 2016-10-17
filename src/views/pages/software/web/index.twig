@@ -1,0 +1,65 @@
+{% set title = "Web" %}
+
+{% extends "../../../layout/basic_page.twig" %} 
+{% import '../_software-macros.twig' as macros %} 
+
+{% block inner_content %}
+<h1 class="software-section-name">Web</h1>
+<div class="software-section-container">
+    {{ macros.software_entry(
+        'Gag Reflex', 
+        'Chrome extension to highlight satirical news articles on your Facebook timeline', 
+        '/software/web/gagreflex.html', 
+        '/assets/images/software/web/gagreflex/gagreflex.jpg') }}
+         
+    {{ macros.software_entry(
+        'Synop', 
+        'What happens when two movies on Netflix collide?', 
+        '/software/web/synop.html', 
+        '/assets/images/software/web/synop/synop.jpg') }}        
+
+    {{ macros.software_entry(
+        'The Green Smile', 
+        'One-click access to popular ASCII/Unicode faces on Chrome', 
+        '/software/web/greensmile.html', 
+        '/assets/images/software/web/greensmile/greensmile.jpg') }}        
+
+    {{ macros.software_entry(
+        'ChannelSurf', 
+        'Click... click... click... click... so much to watch, but nothing is on.', 
+        '/software/web/channelsurf.html', 
+        '/assets/images/software/web/channelsurf/channelsurf.jpg') }}        
+
+    {{ macros.software_entry(
+        'SickMartyr', 
+        'Throw away your money needlessly on random, fake Kickstarter projects!', 
+        '/software/web/sickmartyr.html', 
+        '/assets/images/software/web/sickmartyr/sickmartyr.png') }}        
+
+    {{ macros.software_entry(
+        'Reddmo', 
+        "It's not Cosmo! It's the internationally famous news magazine, Reddmo!", 
+        '/software/web/reddmo.html', 
+        '/assets/images/software/web/reddmo/reddmo.png') }}        
+
+    {{ macros.software_entry(
+        'Drifter', 
+        'A retro HTML5 toy for the holidays!', 
+        '/software/web/drifter.html', 
+        '/assets/images/software/web/drifter/drifter.png') }}        
+
+    {{ macros.software_entry(
+        'ToneDef (HTML5 Remake)', 
+        'HTML5 port of the Android ToneDef tone dialer', 
+        '/software/web/tonedefhtml5.html', 
+        '/assets/images/software/web/tonedefhtml5/tonedefhtml5.jpg') }}
+         
+    {#{{ macros.software_entry(
+        'BytesTemplar.com', 
+        'You used to be soaking in it!', 
+        '/software/web/bytestemplar.html', 
+        'http://bytestemplar.com/sites/default/files/e0446dcfe5bbd4080a6bf81330a519d920f1fec3%5B1%5D.png') }}#}
+         
+</div>
+<div align="center">Can't find it here? Check the <a href="/software/attic.html">attic</a>!</div>
+{% endblock inner_content %}

@@ -1,0 +1,27 @@
+{% set title = "ChannelSurf" %}
+
+{% extends '../../../layout/software.twig' %} 
+
+{% block main_image %}/assets/images/software/web/channelsurf/channelsurf.jpg{% endblock main_image %}
+
+
+{% block description %}
+<p>An unauthorized port of Neave.TV from Flash to HTML5, with additional video content!</p>
+
+<p>I stumbled onto <a href="http://neave.tv/">Neave.TV</a> last night and watched it until the clips rolled over to the 
+   start again. I noticed it was written in Flash, and since that tech is on it's way out, 
+   I wondered how easy it would be to implement what I was seeing, in HTML5.</p>
+
+<p>Once I found the playlist XML file, I pulled down a couple FLV video clips, converted them 
+    to MP4, and got to work. After an evening of screwing around getting it working, I started 
+    yanking down even more clips in WebM format off of YouTube. :)</p>
+{% endblock description %}
+
+{% block links %}
+<ul>
+    <li><a href="http://bytestemplar.com/misc/toys/ChannelSurf/">Watch TV</a> <small>(Click anywhere to change channels!)</small></li>
+</ul>
+<div class="play-it-block">        
+    <a class="badge_github" title="Fork it on GitHub!"href="https://github.com/Fortyseven/ChannelSurf"><div></div></a>
+</div>
+{% endblock links %}

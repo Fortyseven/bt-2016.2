@@ -1,0 +1,24 @@
+{% set title = "Games" %}
+
+{% extends "../../../layout/basic_page.twig" %}
+
+{% import '../_software-macros.twig' as macros %}
+
+{% block inner_content %}
+    <h1 class="software-section-name">Games</h1>
+    <div class="software-section-container">
+    {{ macros.software_entry(
+        'LaserSmash!', 
+        'A fan homage to a classic console arcade shooter!', 
+        '/software/games/lasersmash.html', 
+        '/assets/images/software/games/lasersmash/astro2.jpg') }}
+
+    {{ macros.software_entry(
+        'SnoZone', 
+        'A holiday themed tank shooter?! The War on Christmas just got stupider!', 
+        '/software/games/snozone.html', 
+        '/assets/images/software/games/snozone/snozone.jpg') }}
+        
+    </div>
+    <div align="center">Can't find it here? Check the <a href="/software/attic.html">attic</a>!</div>
+{% endblock inner_content %} 

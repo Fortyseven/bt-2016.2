@@ -1,0 +1,30 @@
+{% set title = "Electronic Warehouse Manager" %}
+
+{% extends '../../../layout/software.twig' %} 
+
+{% block main_image %}/assets/images/software/mobile/ewm/ewm.jpg{% endblock main_image %}
+
+{% block description %}
+<p>From the official <a href="http://necs.com/">NECS</a> description:</p>
+
+<blockquote><i>"The Electronic Warehouse Manager is the productivity tool which every food distributor needs to automate their 
+    warehouse operations while reducing or eliminating time consuming office tasks. It runs on economically priced Android 
+    devices with Bluetooth barcode scanners to change your warehouse processes to a real-time, paperless environment. It's 
+    easy to use touch interface and intuitive design make it easy for the average employee to pick up and become proficient 
+    with little or no training. It fully supports barcode scanning, can connect with Bluetooth enabled scales for distributors 
+    who weigh product, and you can print customer picking labels as line items on a customer's order are filled. The Electronic 
+    Warehouse Manager is one of our most exciting new software applications to be offered because of its ability to bring 
+    speed and accuracy to warehouse operations while reducing warehouse and office staff. It also improves your reputation 
+    for reliability by having accurate orders that go out correctly the first time, while eliminating customer "special 
+    runs" to correct critical order picking errors."</i></blockquote>
+
+<p>One of two people working on this, I was involved in creating and maintaining the Android client with it's native 
+    activities and Bluetooth drivers. I was also involved in working on portions of the Sencha Touch interface.</p>
+
+<p>This project required reverse engineering of the API for several barcode scanners and printers.</p>
+{% endblock description %}
+{% block links %}
+<ul>
+    <li><a href="http://necs.com/ewm/">Official Site</a>
+</ul>
+{% endblock links %}

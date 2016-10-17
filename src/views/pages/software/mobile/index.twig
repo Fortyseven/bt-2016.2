@@ -1,0 +1,36 @@
+{% set title = "Mobile" %}
+
+{% extends "../../../layout/basic_page.twig" %} 
+
+{% import '../_software-macros.twig' as macros %} 
+
+{% block inner_content %}
+<h1 class="software-section-name">Mobile</h1>
+<div class="software-section-container">
+    {{ macros.software_entry(
+        'ToneDef', 
+        'Open source DTMF tone dialer for Android, and much more!', 
+        '/software/mobile/tonedef.html', 
+        '/assets/images/software/mobile/tonedef/tonedef.jpg') }}
+         
+    {{ macros.software_entry(
+        'Dobbsface', 
+        'The pure slack of personal time control!', 
+        '/software/mobile/dobbsface.html', 
+        '/assets/images/software/mobile/dobbsface/dobbsface.jpg') }}
+
+    {{ macros.software_entry(
+        'The Podtoid Aural Extrusion', 
+        'Carry around Jim Sterling and friends in your pocket!', 
+        '/software/mobile/podtoid.html', 
+        '/assets/images/software/mobile/podtoid/podtoid.jpg') }}
+
+    {{ macros.software_entry(
+        'Electronic Warehouse Manager', 
+        'Boost productivity on the warehouse floor!', 
+        '/software/mobile/ewm.html', 
+        '/assets/images/software/mobile/ewm/ewm.jpg') }}
+         
+</div>
+<div align="center">Can't find it here? Check the <a href="/software/attic.html">attic</a>!</div>
+{% endblock inner_content %}

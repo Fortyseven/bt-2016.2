@@ -1,0 +1,38 @@
+{% set title = "SnoZonE" %}
+
+{% extends '../../../layout/software.twig' %} 
+
+{% block main_image %}/assets/images/software/games/snozone/snozone.jpg{% endblock main_image %}
+
+{% block description %}
+<p><i>You're a tank in a pit of abandoned Christmas junk! Are those rocks? Are they coal? It doesn't 
+    matter: <b>everyone</b> is naughty in the XMas Pit. And the Snowmen are about to judge you harder than 
+    an anonymous teenager on the internet.</i></p>
+
+<p>Bucking the theme for Ludum Dare 31, I wanted to create a tank battle game inspired by the original 'Battle 
+    Zone' arcade game. It started out that way, and got...christmassy early on.</p>
+
+<h3>Known Issues</h3>
+<ul>
+    <li>Player can roll upside down under the right conditions.</li>
+    <li>Snowmen aren't too smart.</li>
+    <li>WebGL build shows plenty of visual quirks and artifacting.</li>
+    <li>Snowball physics could be a lot better.</li>
+    <li>Could use loading screen between title and game.</li>
+    <li>Lots of other, smaller things. Not fixed because I have to move on to other things.</li>
+</ul>
+
+<p><i><small>(The verison on <a href="http://fortyseven.itch.io/snozone">itch.io</a> is the original, unmodified LDJAM version lacking many post-jam updates.)</small></i></p>
+
+{% endblock description %}
+{% block links %}
+<ul>
+    <li><a href="http://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=2847">Ludum Dare 31 project page</a></li>
+    <li><a href="https://github.com/Fortyseven/LD31_SnoZonE">Source Code (pre-GameJolt, but post-LDJAM)</a></li>    
+</ul>
+<div class="play-it-block">
+    <a class="badge_itchio" title="Play it on itch.io!" href="https://fortyseven.itch.io/snozone"><div></div></a>
+    <a class="badge_gamejolt" title="Play it on Game Jolt!"href="http://gamejolt.com/games/arcade/snozone/41274/"><div></div></a>
+</div>
+
+{% endblock links %}

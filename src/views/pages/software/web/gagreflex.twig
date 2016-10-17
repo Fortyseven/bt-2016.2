@@ -1,0 +1,30 @@
+{% set title = "Gag Reflex" %}
+
+{% extends '../../../layout/software.twig' %} 
+
+{% block main_image %}/assets/images/software/web/gagreflex/gagreflex.jpg{% endblock main_image %}
+
+{% block description %}
+<p>Ever kick yourself for realizing too late that the amazing article you've commented on, or shared with your 
+    friends, was actually... a joke? Tired of accidentally sharing an 'incredible' story from a website known 
+    for publishing exaggerated, or poorly researched click-bait?</p>
+
+<p>Don't let your thick-headed fatuousness catch you off guard again!</p>
+
+<p>The Gag Reflex extension for Google Chrome highlights articles on Facebook and Reddit from a regularly 
+    updated list of satirical and questionable news sources, such as ClickHole, The Onion, InfoWars and 
+    hundreds more!</p>
+
+<p>Includes the ability to define your own groups. Groups, including those built-in, can be disabled. Don't
+     want it to run on Reddit, but want to keep using it in Facebook? No problem. You can disable 
+     highlighting for each individual site.</p>
+
+<p><b>NOTE: This software is no longer published or supported; it needs a new maintainer!</b></p>
+
+{% endblock description %}
+{% block links %}
+<div class="play-it-block">    
+    {#<a class="badge_chrome" title="Available on the Chrome Web Store!"href="https://chrome.google.com/webstore/detail/gag-reflex/aceebhdjinpebfnbmbcgcmnldkfppanh"><div></div></a>#}
+    <a class="badge_github" title="Fork it on GitHub!"href="https://github.com/Fortyseven/GagReflex"><div></div></a>
+</div>
+{% endblock links %}

@@ -1,0 +1,26 @@
+{% set title = "Home" %}
+{% extends '../layout/base.twig' %} 
+{% block content %}
+	<div id="FrontPage">
+		<!--img src="/assets/images/max.gif"/-->
+		<img src='/assets/images/frontpage_collage.jpg' />
+	</div>
+	<div id="SocialBlock">
+		<div>
+			<a href="https://www.facebook.com/BytesTemplar"><img width="24" height="24" src="/assets/images/footer/social_facebook.png" alt="Facebook" />Facebook</a>
+		</div>
+		<div>
+			<a href="https://twitter.com/BytesTemplar"><img width="24" height="24" src="/assets/images/footer/social_twitter.png" alt="Twitter" />Twitter</a>
+		</div>
+		<div>
+			<a href="https://www.youtube.com/user/BytesTemplarInc"><img width="24" height="24" src="/assets/images/footer/social_youtube.png" alt="YouTube" />YouTube</a>
+		</div>
+		<div>
+			<a href="https://github.com/Fortyseven"><img width="24" height="24" src="/assets/images/footer/social_github.png" alt="GitHub" />GitHub</a>
+		</div>
+		<div>
+			<a href="https://bitbucket.org/fortyseven/"><img width="24" height="24" src="/assets/images/footer/social_bitbucket.png" alt="BitBucket" />BitBucket</a>
+		</div>
+	</div>
+{% endblock %} 
+{% block footer %}{% include '../partials/_footer.twig' %} {% endblock %}

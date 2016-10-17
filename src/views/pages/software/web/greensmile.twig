@@ -1,0 +1,26 @@
+{% set title = "The Green Smile" %}
+
+{% extends '../../../layout/software.twig' %} 
+
+{% block main_image %}/assets/images/software/web/greensmile/greensmile.jpg{% endblock main_image %}
+
+{% block description %}
+<p>One-click access to popular ASCII/Unicode faces from your Google Chrome browser.</p>
+
+<p>There are other extensions in the Chrome web store that perform the same function... <i><b>but none 
+    has a name so <u>irrelevant</u>!</b></i></p>
+
+<p>Jokes aside, why did I write this? I have vague trust issues with the other extensions in the 
+    store. They don't seem to be updated very often. And, frankly, I just thought it would be a fun 
+    little diversion. I wanted an implementation of this kind of extension to be available with 
+    full source code available to anyone, free of any kind of 'hanky panky', like ads or worse.</p>
+
+<p>About the name... I'm sorry. <i><small>(Not sorry!)</small></i></p>
+{% endblock description %}
+
+{% block links %}
+<div class="play-it-block">    
+    <a class="badge_chrome" title="Available on the Chrome Web Store!"href="https://chrome.google.com/webstore/detail/the-green-smile/mmomnjhagcfpgkcidjfbjbjklojcpnli"><div></div></a>
+    <a class="badge_github" title="Fork it on GitHub!"href="https://github.com/Fortyseven/TheGreenSmile"><div></div></a>
+</div>
+{% endblock links %}

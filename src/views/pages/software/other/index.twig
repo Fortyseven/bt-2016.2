@@ -1,0 +1,30 @@
+{% set title = "Other" %}
+
+{% extends "../../../layout/basic_page.twig" %}
+
+{% import '../_software-macros.twig' as macros %} 
+
+{% block inner_content %}
+<h1 class="software-section-name">Other</h1>
+<div class="software-section-container">
+    {{ macros.software_entry(
+        'Max', 
+        'A quick toy to simulate the 1980s most famous talking head.', 
+        '/software/other/max.html', 
+        '/assets/images/software/other/max/max.jpg') }}
+         
+    {{ macros.software_entry(
+        'Birthday Card', 
+        'Simple 2D animated birthday card using Unity.', 
+        '/software/other/birthday-card.html', 
+        '/assets/images/software/other/birthdaycard/birthdaycard.jpg') }}
+
+    {{ macros.software_entry(
+        'Brownian', 
+        'Primitive simulation of Brownian motion', 
+        '/software/other/brownian.html', 
+        '/assets/images/software/other/brownian/brownian.jpg') }}
+         
+</div>
+<div align="center">Can't find it here? Check the <a href="/software/attic.html">attic</a>!</div>
+{% endblock inner_content %}

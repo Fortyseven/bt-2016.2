@@ -1,0 +1,20 @@
+{% set title = "TalkTime" %}
+
+{% extends '../../../layout/software.twig' %} 
+
+{% block main_image %}/assets/images/software/libs/talktime/talktime.png{% endblock main_image %}
+
+{% block description %}
+<p>This is a Unity3D script to animate a 2D GameObject based on real-time audio clip amplitude.</p> 
+<p>It's easy to use: just attach the TalkTime script to a GameObject, and then add references to the GameObjects 
+    representing the mouth frames. The frames represent 0 to Max audio amplitude. I'm using four here in the demo, but 
+    it should work with as many frames as you'd like.</p>
+<p>With some hacking, you could modify this to do anything, not just flip through 
+    frames. Go nuts. And send me any bug fixes or modifications.</p>
+{% endblock description %}
+{% block links %}
+<ul>
+    <li><a href="http://bytestemplar.com/misc/unity/talktime/">Demo</a> <i>(currently broken)</i></li>
+    <li><a href="https://github.com/Fortyseven/TalkTime">Fork it on GitHUb!</a></li>
+</ul>
+{% endblock links %}

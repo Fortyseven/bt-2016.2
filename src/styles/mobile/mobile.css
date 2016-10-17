@@ -1,0 +1,164 @@
+.Card {
+  background: #f8f8f8;
+  padding: 0.5em;
+  margin: 1em;
+  box-shadow: 2px 2px 8px #888888;
+  clear: both;
+}
+.Card-Hover {
+  box-shadow: 1px 1px 2px #bababa;
+  transition: all 0.15s;
+  background-color: white;
+}
+.Button {
+  background: #880000;
+  border-radius: 2em;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  text-align: center;
+  color: white;
+  font-size: 12pt;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.Button a {
+  min-width: 8em;
+  border-radius: 2em;
+  padding: 0.50em;
+  margin: 0;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+}
+.Button a:hover,
+.Button button:hover {
+  background: #440000;
+  transition: background 0.125s;
+}
+.Button button {
+  display: inline-block;
+  border: none;
+  background: #880000;
+  border-radius: 2em;
+  font-weight: bold;
+  min-width: 8em;
+  padding: 0.50em;
+  margin: 0;
+  color: white;
+}
+/************************************************************/
+header {
+  width: 100%;
+  background-color: #880000;
+  box-shadow: 0 0 1em black;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
+/************************************************************/
+#HeaderMenuContainer {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#HeaderMenuContainer #HeaderMenuLogo img {
+  display: block;
+  width: 100%;
+}
+#HeaderMenuContainer .region {
+  width: 100%;
+  padding-bottom: 0.5em;
+}
+#HeaderMenuContainer ul.menu {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: baseline;
+  align-content: center;
+  padding-top: 0.25em;
+}
+#HeaderMenuContainer ul {
+  padding: 0;
+}
+#HeaderMenuContainer li {
+  flex-basis: 25%;
+  align-self: center;
+  list-style: none;
+  text-align: center;
+}
+#HeaderMenuContainer li a.active-trail {
+  text-shadow: 0 0 8px black;
+  color: gold;
+}
+#HeaderMenuContainer li a {
+  color: white;
+  top: 0;
+  text-shadow: 4px 4px 6px #440000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+#HeaderMenuContainer li a:hover {
+  text-decoration: none;
+  position: relative;
+  top: 2px;
+  text-shadow: 1px 1px 4px black;
+  transition: top 0.1s, text-shadow 0.1s;
+}
+#HeaderMenuContainer li .leaf {
+  padding: 0;
+}
+#Content {
+  padding: 0;
+}
+#SocialBlock {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: baseline;
+  align-content: center;
+}
+#SocialBlock div {
+  flex-basis: auto;
+  align-self: center;
+  height: 24px;
+  padding: 0.25em;
+  font-family: "Roboto Condensed", serif;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+#SocialBlock div a {
+  text-decoration: none;
+  color: black;
+}
+#SocialBlock div img {
+  margin-right: 0.5rem;
+  vertical-align: text-top;
+}
+div.project-teaser {
+  flex-basis: 100%;
+}
+article.project-article .title {
+  font-size: 8vw;
+}
+/* About */
+#node-14 {
+  padding: 1em;
+}
+#node-14 h1 {
+  padding: 0;
+  margin: 0;
+}
+#node-14 p {
+  font-family: "Roboto";
+  font-weight: 400;
+  padding: 0;
+  text-align: justify;
+}
+#node-14 p img {
+  clear: both;
+}
+.taxonomy-terms h1 {
+  left: -0.5em;
+}
