@@ -50,8 +50,17 @@ module.exports = function(grunt) {
                     dest: 'dist/styles/fonts/',
                     src: ['**/*.*']
                 }]
+            },
+			scripts: {
+                files: [{
+                    expand: true,
+                    flatten: false,
+                    dot: true,
+                    cwd: 'src/scripts/',
+                    dest: 'dist/scripts/',
+                    src: ['**/*.*']
+                }]
             }
-
         },
 
         less: {
