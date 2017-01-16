@@ -12,7 +12,6 @@
         "jshint-stylish": "latest",
         "grunt-contrib-uglify": "latest",
         "grunt-contrib-less": "latest",
-        "grunt-contrib-cssmin": "latest",
         "grunt-contrib-watch": "latest",
         "grunt-twig-render": "latest",
         "grunt-contrib-clean": "latest",

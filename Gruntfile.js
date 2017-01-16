@@ -79,13 +79,13 @@ module.exports = function( grunt ) {
             }
         },
 
-        cssmin: {
-            build: {
-                files: {
-                    'dist/styles/main.min.css': 'dist/styles/main.css'
-                }
-            }
-        },
+        // cssmin: {
+        //     build: {
+        //         files: {
+        //             'dist/styles/main.min.css': 'dist/styles/main.css'
+        //         }
+        //     }
+        // },
 
         uglify: {
             options: {
@@ -117,7 +117,8 @@ module.exports = function( grunt ) {
         watch: {
             styles: {
                 files: [ 'src/**/*.less', ],
-                tasks: [ 'less', 'cssmin', 'copy' ]
+                // tasks: [ 'less', 'cssmin', 'copy' ]
+                tasks: [ 'less', 'copy' ]
             },
             pages: {
                 files: [ 'src/**/*.twig', ],
@@ -131,13 +132,14 @@ module.exports = function( grunt ) {
     grunt.loadNpmTasks( 'grunt-contrib-jshint' );
     grunt.loadNpmTasks( 'grunt-contrib-uglify' );
     grunt.loadNpmTasks( 'grunt-contrib-less' );
-    grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
+    //grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
     grunt.loadNpmTasks( 'grunt-contrib-watch' );
     grunt.loadNpmTasks( 'grunt-twig-render' );
     grunt.loadNpmTasks( 'grunt-contrib-copy' );
     grunt.loadNpmTasks( 'grunt-contrib-clean' );
 
     /******** Register Tasks *************/
-    grunt.registerTask( 'default', [ 'clean', 'less', 'cssmin', 'twigRender:main', 'copy' ] );
+    // grunt.registerTask( 'default', [ 'clean', 'less', 'cssmin', 'twigRender:main', 'copy' ] );
+    grunt.registerTask( 'default', [ 'clean', 'less', 'twigRender:main', 'copy' ] );
 
 };
