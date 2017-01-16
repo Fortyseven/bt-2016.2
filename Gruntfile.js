@@ -1,13 +1,13 @@
 'use strict';
 
-module.exports = function(grunt) {
+module.exports = function( grunt ) {
 
     // var config = {
     //     path_js: "scripts/"
     // };
 
-    grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
+    grunt.initConfig( {
+        pkg: grunt.file.readJSON( 'package.json' ),
 
         // jshint: {
         //     options: {
@@ -20,50 +20,56 @@ module.exports = function(grunt) {
                 options: {
                     force: true
                 },
-                files: [{
+                files: [ {
                     dot: true,
                     src: [
                         'dist/{,*/}*',
                         '!dist/.git{,*/}*'
                     ]
-                }]
+                } ]
             }
         },
 
         copy: {
             assets: {
-                files: [{
+                files: [ {
                     expand: true,
                     flatten: false,
                     dot: true,
                     cwd: 'src/assets/',
                     dest: 'dist/assets/',
-                    src: ['**/*.*']
-                }]
+                    src: [ '**/*.*' ]
+                } ]
             },
             fonts: {
-                files: [{
+                files: [ {
                     expand: true,
                     flatten: false,
                     dot: true,
                     cwd: 'src/styles/fonts/',
                     dest: 'dist/styles/fonts/',
-                    src: ['**/*.*']
-                }]
+                    src: [ '**/*.*' ]
+                } ]
             },
-			scripts: {
-                files: [{
+            scripts: {
+                files: [ {
                     expand: true,
                     flatten: false,
                     dot: true,
                     cwd: 'src/scripts/',
                     dest: 'dist/scripts/',
-                    src: ['**/*.*']
-                }]
+                    src: [ '**/*.*' ]
+                } ]
             }
         },
 
         less: {
+            options: {
+                plugins: [
+                    ( new( require( 'less-plugin-autoprefix' ) )( { browsers: [ "last 2 versions" ] } ) ),
+                    ( new( require( 'less-plugin-clean-css' ) )( { advanced: true, compatibility: 'ie8' } ) )
+                ]
+            },
             build: {
                 files: {
                     'dist/styles/main.css': 'src/styles/main.less',
@@ -97,41 +103,41 @@ module.exports = function(grunt) {
 
             },
             main: {
-                files: [{
+                files: [ {
                     data: "src/views/data/data.json",
                     expand: true,
                     cwd: "src/views/pages/",
-                    src: ["**/*.twig", "!**/_*.twig"],
+                    src: [ "**/*.twig", "!**/_*.twig" ],
                     dest: "dist/",
                     ext: ".html"
-                }]
+                } ]
             }
         },
 
         watch: {
             styles: {
-                files: ['src/**/*.less', ],
-                tasks: ['less', 'cssmin', 'copy']
+                files: [ 'src/**/*.less', ],
+                tasks: [ 'less', 'cssmin', 'copy' ]
             },
             pages: {
-                files: ['src/**/*.twig', ],
-                tasks: ['twigRender:main', 'copy']
+                files: [ 'src/**/*.twig', ],
+                tasks: [ 'twigRender:main', 'copy' ]
             },
 
         }
 
-    });
+    } );
 
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-twig-render');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks( 'grunt-contrib-jshint' );
+    grunt.loadNpmTasks( 'grunt-contrib-uglify' );
+    grunt.loadNpmTasks( 'grunt-contrib-less' );
+    grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
+    grunt.loadNpmTasks( 'grunt-contrib-watch' );
+    grunt.loadNpmTasks( 'grunt-twig-render' );
+    grunt.loadNpmTasks( 'grunt-contrib-copy' );
+    grunt.loadNpmTasks( 'grunt-contrib-clean' );
 
     /******** Register Tasks *************/
-    grunt.registerTask('default', ['clean', 'less', 'cssmin', 'twigRender:main', 'copy']);
+    grunt.registerTask( 'default', [ 'clean', 'less', 'cssmin', 'twigRender:main', 'copy' ] );
 
 };

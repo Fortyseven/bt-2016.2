@@ -16,6 +16,8 @@
         "grunt-contrib-watch": "latest",
         "grunt-twig-render": "latest",
         "grunt-contrib-clean": "latest",
-        "grunt-contrib-copy": "latest"
+        "grunt-contrib-copy": "latest",
+        "less-plugin-autoprefix": "^1.5.1",
+        "less-plugin-clean-css": "^1.5.1"
     }
 }
