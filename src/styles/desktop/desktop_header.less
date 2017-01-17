@@ -9,69 +9,79 @@ header {
     font-family:      "Open Sans", sans-serif;
     letter-spacing:   -1px;
     white-space:      nowrap;
-}
-/************************************************************/
-#HeaderMenuContainer {
-    max-width:    800px;
-    margin-left:  auto;
-    margin-right: auto;
-    #HeaderMenuLogo {
-        float: left;
-        img {
-            display:        block;
-            height:         100px;
-            padding-top:    0.5em;
-            padding-bottom: 0.5em;
-            padding-right:  1em;
+
+    .container {
+        max-width:    800px;
+        height:       120px;
+        display:      flex;
+        margin-left:  auto;
+        margin-right: auto;
+        .left {
+            background:      url('/assets/images/logo512.png') no-repeat center;
+            background-size: contain;
+            width:  171px;
+            height: 100%;
+            a {
+                font-size: 0;
+                display:   block;
+                width:     100%;
+                height:    100%;
+            }
         }
-    }
-    .region {
-        width:  100%;
-        height: 120px;
-    }
-    #block-menu-menu-projects-menu,
-    .region,
-    div.content {
-        height: 120px;
-    }
-    ul {
-        padding: 0;
-    }
-    ul.menu {
-        height:          100%;
-        display:         flex;
-        justify-content: space-between;
-        flex-flow:       row wrap;
-        align-items:     baseline;
-        align-content:   center;
-    }
-    li {
-        flex-basis: auto;
-        align-self: center;
-        list-style: none;
-        text-align: center;
-        a.active-trail {
-            text-shadow: 0 0 8px black;
-            color:       @bt-menu-selected;
+        .right {
+            flex: 1 1 auto;
+            height: 100%;
+            ul {
+                list-style: none;
+                display:    flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                li {
+                    a {
+                        color:           white;
+                        top:             0;
+                        text-shadow:     4px 4px 6px @bt-dkred;
+                        text-decoration: none;
+                        font-weight:     bold;
+                        font-size:       1.5rem;
+                    }
+                    a:hover {
+                        text-decoration: none;
+                        position:        relative;
+                        top:             2px;
+                        text-shadow:     1px 1px 4px black;
+                        transition:      top .1s, text-shadow .1s;
+                        //transform:       rotate(3deg);
+                    }                        
+                }
+            }
         }
-        a {
-            color:           white;
-            top:             0;
-            text-shadow:     4px 4px 6px @bt-dkred;
-            text-decoration: none;
-            font-weight:     bold;
-            font-size:       1.5rem;
-        }
-        a:hover {
-            text-decoration: none;
-            position:        relative;
-            top:             2px;
-            text-shadow:     1px 1px 4px black;
-            transition:      top .1s, text-shadow .1s;
-            //transform:       rotate(3deg);
-        }
-    }
-    li.leaf {
-        padding: 0;
     }
 }
+
+// #HeaderMenuContainer {
+//     #block-menu-menu-projects-menu,
+//     .region,
+//     div.content {
+//         height: 120px;
+//     }
+//     ul {
+//         padding: 0;
+//     }
+//     ul.menu {
+
+//     }
+//     li {
+//         a.active-trail {
+//             text-shadow: 0 0 8px black;
+//             color:       @bt-menu-selected;
+//         }
+//     }
+//     li.leaf {
+//         padding: 0;
+//     }
+// }

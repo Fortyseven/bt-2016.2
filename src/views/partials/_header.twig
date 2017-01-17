@@ -1,14 +1,14 @@
 {% block header %}
 <header>
-    <div id="HeaderMenuContainer">
-        <div id="HeaderMenuLogo">
-            <a href="/"><img src="/assets/images/logo512.png" /></a>
+    <div class="container">
+        <div class="left">
+            <a title="Home" href="/">Bytes Templar</a>
         </div>
-        <div class="content">
+        <nav class="right">
             <ul class="menu">
                 {% include '../partials/_nav.twig' %}
             </ul>
-        </div>
+        </nav>
     </div>
 </header>
 {% endblock %}
