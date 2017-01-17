@@ -88,15 +88,6 @@ module.exports = function( grunt ) {
                 }
             }
         },
-
-        // cssmin: {
-        //     build: {
-        //         files: {
-        //             'dist/styles/main.min.css': 'dist/styles/main.css'
-        //         }
-        //     }
-        // },
-
         uglify: {
             options: {
                 banner: '/* <%= pkg.name =%> is a butt <%= grunt.template.today("yyyy-mm-dd) %> */\n'
