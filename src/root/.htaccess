@@ -1,0 +1,19 @@
+AddOutputFilterByType DEFLATE text/html text/plain application/javascript text/css
+
+<IfModule mod_headers.c>
+    <filesMatch "\\.(ico|pdf|flv|jpg|jpeg|png|gif|swf)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </filesMatch>
+    <filesMatch "\\.(css)$">
+        Header set Cache-Control "max-age=604800, public"
+    </filesMatch>
+    <filesMatch "\\.(js)$">
+        Header set Cache-Control "max-age=216000, private"
+    </filesMatch>
+    <filesMatch "\\.(xml|txt)$">
+        Header set Cache-Control "max-age=216000, public, must-revalidate"
+    </filesMatch>
+    <filesMatch "\\.(html|htm|php)$">
+        Header set Cache-Control "max-age=1, private, must-revalidate"
+    </filesMatch>
+</IfModule>

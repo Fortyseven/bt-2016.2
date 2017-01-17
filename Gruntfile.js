@@ -51,6 +51,16 @@ module.exports = function( grunt ) {
                     src: [ '**/*.*' ]
                 } ]
             },
+            root: {
+                files: [ {
+                    expand: true,
+                    flatten: false,
+                    dot: true,
+                    cwd: 'src/root/',
+                    dest: 'dist/',
+                    src: [ '**/*.*' ]
+                } ]
+            },
             scripts: {
                 files: [ {
                     expand: true,
@@ -124,9 +134,11 @@ module.exports = function( grunt ) {
                 files: [ 'src/**/*.twig', ],
                 tasks: [ 'twigRender:main', 'copy' ]
             },
-
+            root: {
+                files: [ 'src/root/**/*', ],
+                tasks: [ 'copy:root' ]
+            },
         }
-
     } );
 
     grunt.loadNpmTasks( 'grunt-contrib-jshint' );
